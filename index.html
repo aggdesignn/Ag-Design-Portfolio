@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio — Graphiste, CVM 2026">
+  <title>AURÉLIE GAGNON — Graphiste</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <div class="cursor" id="cursor"></div>
+
+  
+  <nav id="nav">
+    <a href="#accueil" class="nav-nom">AURÉLIE GAGNON</a>
+    <ul class="nav-liens">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#info">Info</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <section id="accueil" class="hero">
+    <div class="hero-texture">
+      <img src="texture.jpg" alt="" aria-hidden="true">
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-nom"> <img src="logo.png"> <br>
+      <p class="hero-intro">Graphiste · CVM 2026<br>Portfolio<br></p>
+    </div>
+    <div class="hero-scroll">↓ Défiler</div>
+  </section>
+
+ 
+  <section id="projets" class="projets-section">
+    <div class="section-label">Projets</div>
+    <div class="projets-grille" id="projets-grille">
+      <!-- Injecté par JS -->
+    </div>
+  </section>
+
+  
+  <div class="texture-separator" aria-hidden="true">
+    <img src="texture.jpg" alt="">
+  </div>
+
+ 
+  <section id="info" class="info-section">
+    <div class="section-label">Info</div>
+
+    <div class="info-grid">
+      <div class="info-bloc info-apropos">
+        <h2>À propos</h2>
+        <p>Diplômée en graphisme, je suis une personne passionnée par la création visuelle et les projets créatifs. J’ai pu développé mes compétences à travers Illustrator, InDesign, Photoshop, figma et After Effects. Grâce à cela, j’ai obtenu des capacitées en projets de designs, d’illustrations, d’emballages, de visuels numériques et de mises en pages à travers divers projets scolaires. En tant que personne créative, détendu, curieuse et organisée, j’aime explorer de nouvelles idées et styles. Mon objectif est de continuer à évoluer dans le monde du design et de créer de nouveaux visuels qui ont un impact.</p>
+      </div>
+
+      <div class="info-bloc info-competences">
+        <h2>Compétences</h2>
+        <ul class="competences-liste">
+          <li>Adobe Illustrator</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe InDesign</li>
+          <li>Figma</li>
+          <li>Adobe After Effects</li>
+          
+        </ul>
+      </div>
+
+      <div class="info-bloc info-experience">
+        <h2>Expérience de travail</h2>
+        <table class="exp-table">
+          <tr><th>Poste</th><th>Lieu</th><th>Date</th></tr>
+          <tr><td>Designer graphique</td><td>Cascade</td><td>2024-2025</td></tr>
+         
+        </table>
+
+        <h2 style="margin-top: 40px;">Formation</h2>
+        <table class="exp-table">
+          <tr><th>Programme</th><th>École</th><th>Date</th></tr>
+          <tr><td>DEC en graphisme</td><td>CVM</td><td>2023–2026</td></tr>
+          
+        </table>
+      </div>
+
+      <div class="info-bloc info-stats">
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Projets</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Ans d'études</span></div>
+        <div class="stat"><span class="stat-num">7</span><span class="stat-label">Disciplines</span></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="contact-section">
+    <div class="contact-texture" aria-hidden="true">
+      <img src="texture.jpg" alt="">
+    </div>
+    <div class="contact-content">
+      <div class="section-label">Contact</div>
+      <h2 class="contact-titre">Contactez<br><span class="accent">moi!</span></h2>
+      <a href="mailto:aurelie.gagnon.graphiste@gmail.com" class="contact-email">aurelie.gagnon.graphiste@gmail.com</a>
+      <div class="contact-reseaux">
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">Behance</a>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <span class="footer-nom">AURÉLIE GAGNON</span>
+    <span class="footer-copy">© 2026 · CVM · Techniques de graphisme</span>
+    <a href="mailto:aurelie.gagnon.graphiste@gmail.com" class="footer-contact">aurelie.gagnon.graphiste@gmail.com</a>
+  </footer>
+
+ 
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu du projet">
+    <button class="lightbox-fermer" id="lightbox-fermer" aria-label="Fermer">✕</button>
+    <div class="lightbox-contenu" id="lightbox-contenu"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
